@@ -1,0 +1,3 @@
+# KTable and TTable
+
+popcorn2 uses two different types to implement page tables. `TTable` is used on a per-process basis, and contains the mappings for the lower half of the address space, which is specific for each process. In contrast, `KTable` stores the mappings for the kernel, which are shared across every single process. On an architecture like Arm, with two separate page table registers, these map directly to the global `KTable` and the `TTable` for the current process. On architectures like x86, with only one hardware page table, the implementation is more complex and requires cooperation between `KTable` and each `TTable` instance.

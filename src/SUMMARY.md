@@ -3,9 +3,11 @@
 [Introduction](./introduction.md)
 
 # Paging
-	- [KTable and LTable]()
+- [KTable and TTable](./ktable-ltable.md)
+	- [Implentation details](./ktable-ltable-details.md)
 
 # HAL
+- [Porting]()
 
 ---
 
