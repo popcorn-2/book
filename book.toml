@@ -1,0 +1,6 @@
+[book]
+authors = ["Eliyahu Gluschove-Koppel"]
+language = "en"
+multilingual = false
+src = "src"
+title = "popcorn2 book"
