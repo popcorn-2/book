@@ -8,7 +8,3 @@
 
 # HAL
 - [Porting]()
-
----
-
-[Contributing?]()
