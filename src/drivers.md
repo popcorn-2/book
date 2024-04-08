@@ -70,7 +70,7 @@ IO port and memory access is only allowed to ports and memory the driver has pri
 (`;` used to begin a line comment)
 
 #### i8042 PS/2 controller handler
-```armasm
+```popirq
 PUSH X      ; So the driver knows which device this interrupt is from
 INB Y, 0x60 ; Read from the i8042 data port
 PUSH Y      ; Pass the incoming data onto the driver
@@ -82,7 +82,7 @@ PUSH Y      ; Pass the incoming data onto the driver
 Assume here that logical interrupt numbers map to standard dual PIC lines.
 This example does **not** handle spurious interrupts.
 
-```armasm
+```popirq
 CLI          ; Disable interrupts before sending the EOI to prevent any loops
 IMM Y, 0x20  ; Load the Y register with the EOI command
 BLE X, 7, 2  ; If interrupt lines 0-7, jump 2 instructions ahead
