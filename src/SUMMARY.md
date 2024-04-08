@@ -6,7 +6,7 @@
 - [Boot process]()
 - [Disk format]()
 - [Capabilities]()
-- [Driver model]()
+- [Driver model](./drivers.md)
 - [IPC]()
 - [Package management]()
 
