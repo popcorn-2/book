@@ -15,7 +15,7 @@ a driver descriptor object. The `NEXT` command is then sent repeatedly. If the d
 
 ---
 
-Loosley based on [UDI device enumeration](https://wiki.osdev.org/User:Gravaera/UDI_Device_Enumeration).
+Loosely based on [UDI device enumeration](https://wiki.osdev.org/User:Gravaera/UDI_Device_Enumeration).
 
 ---
 
@@ -89,3 +89,9 @@ BLE X, 7, 2  ; If interrupt lines 0-7, jump 2 instructions ahead
 OUTB 0xA0, Y ; Otherwise send the EOI command to the second PIC
 OUTB 0x20, Y ; In all cases, send the EOI command to the first PIC
 ```
+
+---
+
+Loosely modelled on RP2040 PIO blocks
+
+---
