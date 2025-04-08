@@ -7,7 +7,7 @@
 - [Disk format]()
 - [Capabilities]()
 - [Driver model](./drivers.md)
-- [IPC]()
+- [IPC](./ipc.md)
 - [Package management]()
 
 # HAL
